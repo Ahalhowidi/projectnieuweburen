@@ -15,16 +15,12 @@ public function index()
 public function sign_up()
 {
 
-			$this->form_validation->set_rules('fname','Fname','required|alpha|min_length[3]|max_length[15]|trim',array(
+			$this->form_validation->set_rules('name','name','required|alpha|min_length[3]|max_length[15]|trim',array(
 			'required'=>'You must eneter data to field',
 			'alpha'=>'please enter only letters',
 			'min_length[3]'=>'the name must at least 3 letters'
 		));
-			$this->form_validation->set_rules('lname','Lname','required|alpha|min_length[3]|max_length[15]|trim',array(
-			'required'=>'You must eneter data to field',
-			'alpha'=>'please enter only letters',
-			'min_length[3]'=>'the name must at least 3 letters'
-		));
+			
 			$this->form_validation->set_rules('email','Email','required|trim|valid_email',array(
 			'required'=>'You must eneter data to field',
 			'valid_email'=>'please enter valid email',
@@ -36,7 +32,7 @@ public function sign_up()
 			'min_length[8]'=>'the name must at least 8 letters'
 
 		));
-			$this->form_validation->set_rules('cpassword','Cpassword','required|min_length[3]|max_length[15]|trim|matches[password]',array(
+			$this->form_validation->set_rules('conf_password','Conf_password','required|min_length[3]|max_length[15]|trim|matches[password]',array(
 			'required'=>'You must eneter data to field',
 			
 			'min_length[8]'=>'the name must at least 8 letters',
