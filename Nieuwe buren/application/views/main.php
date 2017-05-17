@@ -5,12 +5,12 @@
 	<title>Nieuve Buren</title>
 </head>
 <body>
-	<div class="col-md-6" class="form-group" >
+<div class="col-md-6" class="form-group" >
 		<?php 
 		date_default_timezone_set('Europe/Amsterdam');
 		?>
 	 	<h3>Register</h3>
-	 	<form action="register" method="post" >
+	 	<form action="process/sign_up" method="post" >
 	 	<label for="exampleInputName1">Naam:</label>
 	 	<input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="Name"><br>
 	 	<label for="exampleInputEmail1">Email</label>

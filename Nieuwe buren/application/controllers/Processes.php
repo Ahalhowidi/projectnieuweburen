@@ -1,21 +1,16 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Process extends CI_Controller {
+class Processes extends CI_Controller {
 
-public function __construct()
-{
-	$this->load->library(array('form_validation','session'));
-}
+
 public function index()
 {
-
 	$this->load->view('main');
 }
 public function sign_up()
 {
 
-			$this->form_validation->set_rules('name','name','required|alpha|min_length[3]|max_length[15]|trim',array(
+			$this->form_validation->set_rules('name','Name','required|alpha|min_length[3]|max_length[15]|trim',array(
 			'required'=>'You must eneter data to field',
 			'alpha'=>'please enter only letters',
 			'min_length[3]'=>'the name must at least 3 letters'
@@ -32,7 +27,7 @@ public function sign_up()
 			'min_length[8]'=>'the name must at least 8 letters'
 
 		));
-			$this->form_validation->set_rules('conf_password','Conf_password','required|min_length[3]|max_length[15]|trim|matches[password]',array(
+			$this->form_validation->set_rules('confirm_password','Confirm_Password','required|min_length[3]|max_length[15]|trim|matches[password]',array(
 			'required'=>'You must eneter data to field',
 			
 			'min_length[8]'=>'the name must at least 8 letters',
@@ -105,4 +100,5 @@ public function sign_in()
 		$message['errors']="invalid email or password";
 		$this->load->view('home',$message);
 	}
+}
 }

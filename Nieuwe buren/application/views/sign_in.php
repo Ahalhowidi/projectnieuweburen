@@ -10,7 +10,7 @@
 		date_default_timezone_set('Europe/Amsterdam');
 		?>
 	 	<h3>Register</h3>
-	 	<form action="register" method="post" >
+	 	<form action="Processes/sign_up" method="post" >
 	 	<label for="exampleInputName1">Naam:</label>
 	 	<input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="Name"><br>
 	 	<label for="exampleInputEmail1">Email</label>
@@ -73,7 +73,7 @@
 		date_default_timezone_set('Europe/Amsterdam');
 		?>
 		<h3>Log In</h3>
-		<form action="/Users/login" method="post">
+		<form action="Processes/sign_in" method="POST">
 		<label for="exampleInputEmail1">Email:</label>
 		<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required><br>
 		<label for="exampleInputPassword1">Wachtwoord</label>
