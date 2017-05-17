@@ -41,9 +41,9 @@
   		<input type="radio" name="new_nederlander" id="inlineRadio1" value="option1">Nieuwe Nederlander</label>
 		<label class="radio-inline">
   		<input type="radio" name="old_nederlander" id="inlineRadio2" value="option2">Oude Nederlander</label><br>
-	 	<label for="exampleInputFile">Voeg foto</label>
+	 	<label for="exampleInputFile">Voeg foto toe</label>
     	<input type="file" id="exampleInputFile">
-    	<p class="help-block">Voeg een foto voor je gezin</p>
+    	<p class="help-block">Voeg een foto voor je gezin toe</p>
     	<label for="exampleInputTaal">Wilt u deelnemen als gast of als host?</label><br>
     	<label class="checkbox-inline">
   		<input type="checkbox" id="inlineCheckbox1" name="gast" value="gast">Gast</label>
@@ -51,7 +51,7 @@
   		<input type="checkbox" id="inlineCheckbox2" name="host" value="host">Host</label><br>
   		<label for="exampleInputFamily">Wat is de samenstelling van uw gezin?</label><br>
   		<label for="exampleInputFamily_age">Leeftijd:</label>
-	 	<input type="text" name="family_age" class="form-control" id="exampleInputName1" placeholder="Postcode (bijv.1234 AB)">
+	 	<input type="text" name="family_age" class="form-control" id="exampleInputName1" placeholder="Leeftijd">
 	 	<label for="exampleInputGeslacht">Geslacht</label><br>
 	 	<label class="radio-inline">
   		<input type="radio" name="man" id="inlineRadio1" value="option1">Maan</label>
@@ -96,7 +96,7 @@
   		<label for="exampleInputDescribtion">Vertel wat over uw gezin:</label><br>
   		<textarea class="form-control" rows="3" placeholder="Vertel wat over uw gezin" ></textarea>
   		<label class="checkbox-inline">
-  		<input type="checkbox" id="inlineCheckbox1" value="option1">Ik ga akkoord met de algemene voorwaarden.</label><br>
+  		<input type="checkbox" id="inlineCheckbox1" value="option1">Ik ga akkoord met de <a href="#">algemene voorwaarden.</a></label><br>
     	<input type="submit" value="Meld je nu aan!">
 	 	</form>
  	</div>
